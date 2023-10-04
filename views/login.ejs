@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eb8c8c;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #333;
+      margin-top: 20px;
+    }
+
+    form {
+      background-color: rgb(141, 28, 99);
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: auto;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>User Login</h1>
+  <form method="POST">
+
+    <!-- Email Field -->
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="username" required>
+    </div>
+
+    <!-- Password Field -->
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+
+    <!-- Submit Button -->
+    <div>
+      <button type="submit">Login</button>
+    </div>
+  </form>
+</body>
+
+</html>
